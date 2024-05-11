@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:background="@drawable/c1"
+    android:layout_height="match_parent"
+    tools:context=".UpdateNoteActivity"
+
+    >
+
+    <TextView
+        android:id="@+id/editnoteheading"
+        android:fontFamily="@font/allura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Edit Note"
+        android:textColor="@color/pink"
+        android:textStyle="bold"
+        android:textSize="34sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        />
+
+    <ImageView
+        android:id="@+id/updatesavebutton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        android:src="@drawable/done"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@id/editnoteheading"
+        android:layout_marginEnd="20dp"
+
+
+        />
+
+    <EditText
+        android:id="@+id/updatetiteledittext"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Enter the title here..."
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:fontFamily="@font/allura"
+        android:layout_below="@id/editnoteheading"
+        android:background="@drawable/pink_border"
+        android:layout_marginTop="16dp"
+        android:maxLines="1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+
+    <EditText
+        android:id="@+id/updatecontentedittext"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="Enter the description here..."
+        android:gravity="top"
+        android:fontFamily="@font/allura"
+        android:padding="12dp"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/pink_border"
+        android:layout_below="@id/updatetiteledittext"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+
+
+
+</RelativeLayout>
